@@ -1,0 +1,6 @@
+{
+  "scope": "x_872084_sn_poker",
+  "scopeId": "d2977e0c93380710ba8dfd29dd03d64b",
+  "name": "SN Poker",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
