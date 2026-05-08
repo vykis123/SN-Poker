@@ -1,0 +1,21 @@
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+.heading {
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-style: italic;
+  text-align: center;
+  text-wrap: balance;
+  background-image: linear-gradient(75deg, $main-green, $secondary-green);
+  color: transparent;
+  background-clip: text;
+
+  .heading__span {
+    text-decoration: underline;
+  }
+}

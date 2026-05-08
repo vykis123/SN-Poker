@@ -9,6 +9,18 @@ declare global {
                         table: 'sys_kmf_module_key_policy'
                         id: '2715830893b80710ba8dfd29dd03d670'
                     }
+                    '4138c8ac9330c710ba8dfd29dd03d6e8': {
+                        table: 'sp_instance'
+                        id: '4138c8ac9330c710ba8dfd29dd03d6e8'
+                    }
+                    '4a2840249370c710ba8dfd29dd03d697': {
+                        table: 'sp_column'
+                        id: '4a2840249370c710ba8dfd29dd03d697'
+                    }
+                    '5a1888e09370c710ba8dfd29dd03d60c': {
+                        table: 'sp_container'
+                        id: '5a1888e09370c710ba8dfd29dd03d60c'
+                    }
                     '8a31c8649330c710ba8dfd29dd03d642': {
                         table: 'sp_metatag'
                         id: '8a31c8649330c710ba8dfd29dd03d642'
@@ -20,6 +32,10 @@ declare global {
                     bom_json: {
                         table: 'sys_module'
                         id: '6bf3131c98f94f178183c6a71cdcfe61'
+                    }
+                    c22840249370c710ba8dfd29dd03d692: {
+                        table: 'sp_row'
+                        id: 'c22840249370c710ba8dfd29dd03d692'
                     }
                     mt10: {
                         table: 'sp_metatag'
@@ -53,6 +69,10 @@ declare global {
                     src_server_script_ts: {
                         table: 'sys_module'
                         id: 'f397f218d2864c5f8193ba54c189cc87'
+                    }
+                    wi0: {
+                        table: 'sp_widget'
+                        id: 'bc2705a1e1154428aa5b6d508f4a1562'
                     }
                 }
                 composite: [
