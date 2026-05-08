@@ -6,8 +6,7 @@ SPHeaderFooter({
     htmlTemplate: `
         <p class="footer_text"> SN Poker Application. All rights by Vykis © {{::c.currentDate}}</p>
     `,
-    customCss: `
-        .footer_text {
+    customCss: `.footer_text {
             font-size: clamp(1.2rem, 3vw, 1.7rem);
             color: $secondary-green;
             padding: 1rem 3rem;

@@ -9,9 +9,21 @@ declare global {
                         table: 'sys_kmf_module_key_policy'
                         id: '2715830893b80710ba8dfd29dd03d670'
                     }
+                    '8a31c8649330c710ba8dfd29dd03d642': {
+                        table: 'sp_metatag'
+                        id: '8a31c8649330c710ba8dfd29dd03d642'
+                    }
+                    ae2148649330c710ba8dfd29dd03d67a: {
+                        table: 'sp_metatag'
+                        id: 'ae2148649330c710ba8dfd29dd03d67a'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '6bf3131c98f94f178183c6a71cdcfe61'
+                    }
+                    mt10: {
+                        table: 'sp_metatag'
+                        id: 'bcb7bc2bffa34f33a5ff3efaf6a14057'
                     }
                     package_json: {
                         table: 'sys_module'
