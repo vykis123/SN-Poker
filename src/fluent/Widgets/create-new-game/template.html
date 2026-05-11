@@ -3,7 +3,19 @@
     Welcome to SN Poker game,
     <span class="heading__span">{{::data.currentUser}}</span>
   </h1>
-  <button type="button" class="btn-start" id="btn-start" title="Start new game">
-    Start New Game <span>🃏</span>
+  <button
+    type="button"
+    class="btn__start"
+    id="btn-start"
+    title="Start new game"
+    ng-click="c.openModal()"
+  >
+    Start New Game
   </button>
 </div>
+
+<dialog class="dialog">
+  <div>
+    <widget id="sn-newgame-form"></widget>
+  </div>
+</dialog>

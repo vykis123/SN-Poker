@@ -18,4 +18,26 @@
   .heading__span {
     text-decoration: underline;
   }
+}
+
+.btn__start {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background: none;
+  box-shadow:
+    0 0 0 0.1rem $secondary-green,
+    0 0 1rem $secondary-green;
+  font-weight: bold;
+  font-size: clamp(1.35rem, 2.5vw, 1.55rem);
+  color: $main-green;
+  transition: all 0.15s ease-in;
+
+  &:hover,
+  &:focus-visible {
+    letter-spacing: 1px;
+    box-shadow:
+      0 0 0 0.1rem $secondary-green,
+      inset 0 0 1rem $secondary-green;
+  }
 }

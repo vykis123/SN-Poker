@@ -74,6 +74,10 @@ declare global {
                         table: 'sp_widget'
                         id: 'bc2705a1e1154428aa5b6d508f4a1562'
                     }
+                    wi1: {
+                        table: 'sp_widget'
+                        id: '6b8f5426c7f546ca895468feacf299ed'
+                    }
                 }
                 composite: [
                     {
