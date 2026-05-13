@@ -1,14 +1,32 @@
 <form class="form" id="form" submit="#">
-    <div class="group">
-        <label class="group__label" for="title">Enter Project Title:</label>
-        <input type="text" class="group__input" id="title" name="title" placeholder="Title" required />
-    </div>
-    <button class="form__btn submit" title="Submit form data">Submit</button>
-    <button class="form__btn cancel" title="Cancel form submission">Cancel</button>
+  <div class="group">
+    <label class="group__label" for="title">Project title:</label>
+    <input
+      type="text"
+      class="group__input"
+      id="title"
+      name="title"
+      placeholder="Title"
+      required
+      maxlength="100"
+    />
+  </div>
+  <div class="form__actions">
+    <button class="form__btn submit" title="Submit form data" type="submit">
+      Submit
+    </button>
+    <button
+      ng-click="c.closeModal()"
+      class="form__btn cancel"
+      title="Cancel form submission"
+      type="button"
+    >
+      Cancel
+    </button>
+  </div>
 </form>
 
 <!--TODO
-    - Style component
     - Add actions for both buttons
     - Add validation for value
 -->

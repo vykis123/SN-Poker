@@ -1,0 +1,72 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .group__label {
+    color: $secondary-green;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+
+  .group__input {
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    color: $main-green;
+    border-bottom: 0.1rem solid $lighter-grey;
+
+    &::placeholder {
+      color: $lighter-grey;
+      font-weight: bold;
+    }
+
+    &:focus-visible,
+    &:focus {
+      box-shadow: 0 0 0;
+      border: none;
+      outline: none;
+      border-bottom: 0.1rem solid $secondary-green;
+    }
+  }
+}
+
+.form__actions {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .form__btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: none;
+    border: none;
+    font-size: clamp(1.35rem, 3vw, 1.55rem);
+    transition: all 0.2s ease-in;
+  }
+
+  .submit {
+    box-shadow: 0 0 0 0.1rem $secondary-green;
+    color: $secondary-green;
+
+    &:focus-visible,
+    &:hover {
+      outline: transparent;
+      box-shadow: inset 0 0 1rem $secondary-green;
+    }
+  }
+
+  .cancel {
+    box-shadow: 0 0 0 0.1rem $error;
+    color: $error;
+
+    &:focus-visible,
+    &:hover {
+      outline: transparent;
+      box-shadow:
+        0 0 0 0.1rem $error,
+        inset 0 0 1rem $error;
+    }
+  }
+}
