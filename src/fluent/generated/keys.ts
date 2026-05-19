@@ -81,10 +81,132 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_db_object'
+                        id: '11dbe74c5cfa4c72a83bfa11396abcf9'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '19c66e937a2642578b9eae29ec89e401'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4cf363c05ee94ad0adcadbbcf07c9f67'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sp_page'
                         id: '54f4f9cbc34b425086fca7a3146672ed'
                         key: {
                             id: 'home_page'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6033cd089305c350ba8dfd29dd03d62e'
+                        key: {
+                            sys_ui_section: {
+                                id: '8632cd849305c350ba8dfd29dd03d6ba'
+                                key: {
+                                    name: 'x_872084_sn_poker_sessions'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7ca8472817ad4eafb2f7ea93ba2f2a1a'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'number'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '8632cd849305c350ba8dfd29dd03d6ba'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b44241c49305c350ba8dfd29dd03d615'
+                        key: {
+                            sys_ui_section: {
+                                id: '8632cd849305c350ba8dfd29dd03d6ba'
+                                key: {
+                                    name: 'x_872084_sn_poker_sessions'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'title'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'cca359d5c1964cfa889442948a6bc990'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'title'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ea6e640c01e54ddeb3a66eeede9f4e2f'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ed3bfd591a1b4b95be89fbc49da8fc6c'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'title'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f8a9f4d817fa4a5ba623012d35516bfb'
+                        key: {
+                            name: 'x_872084_sn_poker_sessions'
+                            element: 'number'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_number'
+                        id: 'fa230dc49305c350ba8dfd29dd03d624'
+                        key: {
+                            category: 'x_872084_sn_poker_sessions'
+                            prefix: 'SNP'
                         }
                     },
                 ]

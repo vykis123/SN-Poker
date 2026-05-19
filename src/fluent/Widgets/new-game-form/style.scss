@@ -29,10 +29,30 @@
       border-bottom: 0.1rem solid $secondary-green;
     }
   }
+
+  .wrong {
+    border-bottom: 0.1rem solid $error;
+  }
+}
+
+.title__error {
+  margin-top: 0.5rem;
+  color: $error;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transform: translateX(-30px);
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+.error-visible {
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .form__actions {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -69,4 +89,4 @@
         inset 0 0 1rem $error;
     }
   }
-}
+}

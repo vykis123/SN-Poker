@@ -9,8 +9,11 @@
       placeholder="Title"
       required
       maxlength="100"
+      ng-model="c.title"
+      ng-blur="c.validateTitle()"
     />
   </div>
+  <p class="title__error">Please enter valid Title!</p>
   <div class="form__actions">
     <button class="form__btn submit" title="Submit form data" type="submit">
       Submit
