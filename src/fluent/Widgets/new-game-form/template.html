@@ -9,13 +9,18 @@
       placeholder="Title"
       required
       maxlength="100"
-      ng-model="c.title"
-      ng-blur="c.validateTitle()"
+      ng-model="title"
+      ng-blur="c.validateTitle(title)"
     />
   </div>
   <p class="title__error">Please enter valid Title!</p>
   <div class="form__actions">
-    <button class="form__btn submit" title="Submit form data" type="submit">
+    <button
+      class="form__btn submit"
+      title="Submit form data"
+      type="submit"
+      ng-click="c.createPoker(title)"
+    >
       Submit
     </button>
     <button

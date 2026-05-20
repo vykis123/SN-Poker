@@ -17,9 +17,17 @@ declare global {
                         table: 'sp_column'
                         id: '4a2840249370c710ba8dfd29dd03d697'
                     }
+                    '5a0d46d093c54750ba8dfd29dd03d646': {
+                        table: 'sys_scope_privilege'
+                        id: '5a0d46d093c54750ba8dfd29dd03d646'
+                    }
                     '5a1888e09370c710ba8dfd29dd03d60c': {
                         table: 'sp_container'
                         id: '5a1888e09370c710ba8dfd29dd03d60c'
+                    }
+                    '760d46d093c54750ba8dfd29dd03d64d': {
+                        table: 'sys_scope_privilege'
+                        id: '760d46d093c54750ba8dfd29dd03d64d'
                     }
                     '8a31c8649330c710ba8dfd29dd03d642': {
                         table: 'sp_metatag'
@@ -148,6 +156,13 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sp_page'
+                        id: '88e1cbd1f3d64df7971f6d851764efa7'
+                        key: {
+                            id: 'game'
                         }
                     },
                     {
