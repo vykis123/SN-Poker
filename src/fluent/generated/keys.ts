@@ -9,6 +9,14 @@ declare global {
                         table: 'sys_kmf_module_key_policy'
                         id: '2715830893b80710ba8dfd29dd03d670'
                     }
+                    '2f6db912c3c28390aa47d8ec05013150': {
+                        table: 'sp_instance'
+                        id: '2f6db912c3c28390aa47d8ec05013150'
+                    }
+                    '3e6d7912c3c28390aa47d8ec050131cd': {
+                        table: 'sp_column'
+                        id: '3e6d7912c3c28390aa47d8ec050131cd'
+                    }
                     '4138c8ac9330c710ba8dfd29dd03d6e8': {
                         table: 'sp_instance'
                         id: '4138c8ac9330c710ba8dfd29dd03d6e8'
@@ -29,9 +37,18 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '760d46d093c54750ba8dfd29dd03d64d'
                     }
+                    '7e6d7912c3c28390aa47d8ec050131c8': {
+                        table: 'sp_row'
+                        id: '7e6d7912c3c28390aa47d8ec050131c8'
+                    }
                     '8a31c8649330c710ba8dfd29dd03d642': {
                         table: 'sp_metatag'
                         id: '8a31c8649330c710ba8dfd29dd03d642'
+                    }
+                    '986df112c3c28390aa47d8ec05013142': {
+                        table: 'sp_container'
+                        id: '986df112c3c28390aa47d8ec05013142'
+                        deleted: true
                     }
                     ae2148649330c710ba8dfd29dd03d67a: {
                         table: 'sp_metatag'
@@ -44,6 +61,14 @@ declare global {
                     c22840249370c710ba8dfd29dd03d692: {
                         table: 'sp_row'
                         id: 'c22840249370c710ba8dfd29dd03d692'
+                    }
+                    da0f4adac3068390aa47d8ec0501311b: {
+                        table: 'sys_scope_privilege'
+                        id: 'da0f4adac3068390aa47d8ec0501311b'
+                    }
+                    e83db9dec3828390aa47d8ec05013184: {
+                        table: 'sp_container'
+                        id: 'e83db9dec3828390aa47d8ec05013184'
                     }
                     mt10: {
                         table: 'sp_metatag'
@@ -85,6 +110,10 @@ declare global {
                     wi1: {
                         table: 'sp_widget'
                         id: '6b8f5426c7f546ca895468feacf299ed'
+                    }
+                    wi2: {
+                        table: 'sp_widget'
+                        id: '81d10c9b891349f4b6cdb4c5f6434d1b'
                     }
                 }
                 composite: [

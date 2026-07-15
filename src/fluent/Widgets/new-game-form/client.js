@@ -1,4 +1,4 @@
-api.controller = function ($scope) {
+api.controller = function ($scope, $window) {
   let c = this;
   const dialog = document.querySelector("dialog");
   const titleInput = document.querySelector("#title");
@@ -35,8 +35,10 @@ api.controller = function ($scope) {
       .get(payloadToServer)
       .then(function (response) {
         const { success = false, id = "" } = response.data;
-
+        
         if (!success) throw new Error("Failed creating new record.");
+        
+        $window.open("?id=game&sys_id=" + id, "_self") 
 
         c.closeModal();
       })
