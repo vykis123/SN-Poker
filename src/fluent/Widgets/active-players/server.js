@@ -1,19 +1,65 @@
-(function () {
-    const gameID = $sp.getParameter('sys_id') || "";
-    /**Query x_872084_sn_poker_sessions and get creattion date
-     * query transactions logs bassed on creation date and game id and return users who had joined that game
-     * 
-     */
+const { GlideRecord, GlideAggregate } = require("@servicenow/glide");
 
+(function () {
+    /**Initial data setup on page load */
+    const gameID = $sp.getParameter('sys_id') || "";
+    const currentUser = gs.getUserID() || "";
     if (!gameID) return;
 
-    //Get game session creation date
-    const pokerSessionGr = new GlideRecord("x_872084_sn_poker_sessions");
-    if (!pokerSessionGr.get(gameID)) return;
-    const sessionCreatedDate = pokerSessionGr.getValue("sys_created_on");
+    if(!input){
+        /**Add new joiner if needed */
+        if(currentUser){
+            addUserToGame(currentUser, gameID);
+        }
+        
+        /*Fetch all players and populate to global scope*/
+        data.joinedUsers = fetchAllPlayers(gameID);
+    }
 
-    //Get users who joined specific session after it's creation
-    const joinedUsersIDs = new global.SnPokerHelpers().searchForJoinedUsers(sessionCreatedDate, gameID);
+    /*****************************Methods************************************/
+    /**
+     * @param {string} user : sysid of current logged in user 
+     * @param {string} game : sysid of the current game
+     */
+    function addUserToGame(user, game){
+        try{
+            const userSessionGr = new GlideRecord("x_872084_sn_poker_user_sessions");
+            userSessionGr.addEncodedQuery("player="+user+"^game="+game);
+            userSessionGr.setLimit(1);
+            userSessionGr.query();
+            if(!userSessionGr.hasNext()){
+                userSessionGr.initialize();
+                userSessionGr.setValue("player", currentUser);
+                userSessionGr.setValue("game", gameID);
+                const newSession = userSessionGr.insert();
+    
+                if(!newSession) throw new Error("No new session created!!!");
+            }
 
-    data.joinedUsers = joinedUsersIDs;
+        } catch(error){
+            gs.error("Something went wrong in active-player widget. addUserToGame method: " + error);
+        }
+    }
+
+    /**
+     * @param {string} game : game sysid 
+     * @returns {string[]}
+     */
+    function fetchAllPlayers(game){
+        const players = [];
+        try{
+            const userSession = new GlideAggregate("x_872084_sn_poker_user_sessions");
+            userSession.addEncodedQuery("game="+game);
+            userSession.groupBy("player");
+            userSession.query();
+    
+            while(userSession.next()){
+                players.push(userSession.getValue("player"));
+            }
+
+            return players; 
+        } catch(error){
+            gs.error("Something went wrong in active-player widget. fetchAllPlayers method: " + error);
+        }
+    }
 })();
